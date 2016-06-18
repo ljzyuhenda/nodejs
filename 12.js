@@ -3,11 +3,11 @@ var app = express();
 
 app.use(express.static('public'));
 
-app.get('/', function (request, response) {
-    console.log('get请求');
+// app.get('/', function (request, response) {
+//     console.log('get请求');
 
-    response.send('hello world get 12.js');
-});
+//     response.send('hello world get 12.js');
+// });
 
 app.get('/list_user', function (resquest, response) {
     response.send('list_user');
